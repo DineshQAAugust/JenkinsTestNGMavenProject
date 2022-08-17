@@ -12,6 +12,8 @@ public class TestClass {
 	@Test
 	public void login() {
 
+		System.out.println("Starting the chrome browser====");
+
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com");
@@ -20,6 +22,8 @@ public class TestClass {
 		driver.findElement(By.id("pass")).sendKeys("12345");
 		driver.findElement(By.name("login")).click();
 		driver.close();
+
+		System.out.println("Browser closed successfully=====");
 
 	}
 
