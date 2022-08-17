@@ -3,6 +3,7 @@ package com.qa.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -28,8 +29,10 @@ public class TestClass {
 		System.out.println("End....");
 
 		System.out.println("====");
-		
+
 		System.out.println("====");
+
+		Assert.fail();
 
 	}
 
